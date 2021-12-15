@@ -1,0 +1,7 @@
+rm(list=ls())
+s1=readline(prompt="Enter the 1st string:")
+s2=readline(prompt="Enter the 2nd string:")
+s=gsub(" ","",paste(s1,s2))
+s
+reversed=rev(strsplit(s,"")[[1]])
+paste(reversed,collapse="")

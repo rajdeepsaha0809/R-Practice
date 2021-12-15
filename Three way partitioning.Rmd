@@ -1,0 +1,14 @@
+n=as.integer(readline(prompt="Enter the number of elements in the array:"))
+arr=array(0)
+for(i in 1:n){
+  arr[i]=as.numeric(readline(prompt="Enter the value:"))
+}
+a=as.integer(readline(prompt="Enter the lower bound:"))
+b=as.integer(readline(prompt="Enter the upper bound:"))
+if(a>=min(arr)&&b<=max(arr)){
+  arr=c(arr[arr<a],arr[arr>=a&arr<=b],arr[arr>b])
+  print(1)
+}else{
+  print(-1)
+}
+

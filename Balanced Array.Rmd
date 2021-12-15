@@ -1,0 +1,13 @@
+n=as.integer(readline(prompt="Enter n:"))
+
+while(n%%2!=0){
+  print("Error")
+  n=as.integer(readline(prompt="Enter n:"))
+}
+a=array(0)
+for(i in 1:n){
+  a[i]=as.numeric(readline(prompt="Enter the value:"))
+}
+left=sum(a[1:(n/2)])
+right=sum(a[(n/2+1):n])
+print(abs(left-right))

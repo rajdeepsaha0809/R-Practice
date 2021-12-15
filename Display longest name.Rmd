@@ -1,0 +1,10 @@
+n=n=as.integer(readline(prompt="enter the number of elements in the array:"))
+a=array(0)
+for(i in 1:n){
+  a[i]=readline(prompt="Enter the string:")
+}
+l=array(0)
+for(i in 1:n){
+  l[i]=nchar(a[i])
+}
+max(l)

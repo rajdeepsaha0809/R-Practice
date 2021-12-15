@@ -1,0 +1,12 @@
+n=as.integer(readline(prompt="Enter the number of elements in the array:"))
+x=array(0)
+for(i in 1:n){
+x[i]=as.numeric(readline(prompt="Enter the value:"))
+}
+print(x)
+for(i in 1:(n-1)){
+x=x[x!=max(x)]
+}
+x
+
+

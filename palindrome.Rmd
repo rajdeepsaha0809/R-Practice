@@ -1,0 +1,25 @@
+n=as.integer(readline(prompt="Enter the number of elements in the array:"))
+arr=array(0)
+for(i in 1:n){
+  arr[i]=as.numeric(readline(prompt="Enter the value:"))
+}
+palindrome=function(x){
+i=1
+y=x
+b=array(0)
+while(x!=0){
+  b[i]=x%%10
+  x=x%/%10
+  i=i+1
+}
+l=length(b)
+a=0
+for(i in l:1){
+  a=a+b[l-i+1]*(10^(i-1))
+}
+return(a==y)
+}
+s=sum(sapply(arr,palindrome))
+ifelse(s==length(arr),1,0)
+
+

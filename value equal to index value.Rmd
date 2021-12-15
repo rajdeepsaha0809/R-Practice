@@ -1,0 +1,15 @@
+n=as.integer(readline(prompt="Enter the number of elements in the array:"))
+arr=array(0)
+for(i in 1:n){
+  arr[i]=as.numeric(readline(prompt="Enter the value:"))
+}
+b=array(0)
+k=1
+for(i in 1:n){
+if(arr[i]==i)
+  b[k]=arr[i]
+k=k+1
+}
+b
+
+

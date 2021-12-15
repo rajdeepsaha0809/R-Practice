@@ -1,0 +1,11 @@
+n=as.integer(readline(prompt="Enter the number of heights:"))
+arr=matrix(0,nrow=n,ncol=2,byrow=T)
+for(i in 1:n){
+  for(j in 1:2)
+    arr[i,j]=as.numeric(readline(prompt="Enter the values:"))
+  }
+arr
+for(i in 1:n){
+  inch=arr[i,1]*12+arr[i,2]
+}
+print(max(inch))

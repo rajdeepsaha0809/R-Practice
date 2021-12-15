@@ -1,0 +1,10 @@
+n=as.integer(readline(prompt="Enter the number of elements in the array:"))
+arr=array(0)
+for(i in 1:n){
+  arr[i]=as.numeric(readline(prompt="Enter the value:"))
+}
+for(i in 1:(n-2)){
+  arr[c(i,i+2)]=arr[c(i+2,i)]
+}
+arr
+

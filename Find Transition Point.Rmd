@@ -1,0 +1,14 @@
+n=as.integer(readline(prompt="Enter the no. of elements in the array:"))
+a=array(0)
+for(i in 1:n){
+  a[i]=as.numeric(readline(prompt="Enter the value:"))
+}
+count_of_1=sum(a==1)
+if(count_of_1>0){
+  pos=which(a==1)[1]
+  trans=pos-1
+}else{
+  trans=-1
+}
+trans
+

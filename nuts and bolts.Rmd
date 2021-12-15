@@ -1,0 +1,26 @@
+n=as.integer(readline(prompt="Enter the number of elements in the array:"))
+nuts=array(0)
+Bolts=array(0)
+for(i in 1:n){
+  nuts[i]=readline(prompt="Enter the value:")
+}
+for(i in 1:n){
+  Bolts[i]=readline(prompt="Enter the value:")
+}
+bolts=array(0)
+for(i in 1:n){
+  for(j in 1:n){
+    if(nuts[i]==Bolts[j])
+      bolts[i]=Bolts[j]
+  }
+}
+print(sort(nuts))
+print(sort(bolts))
+
+
+  
+  
+  
+  
+  
+  

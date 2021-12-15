@@ -1,0 +1,13 @@
+n=as.integer(readline(prompt="Enter the number of elements in the array:"))
+arr=array(0)
+for(i in 1:n){
+  arr[i]=as.numeric(readline(prompt="Enter the value:"))
+}
+t=table(arr)
+c=which(t>1)
+l=length(c)
+dist=array(0)
+for(i in 1:l){
+  dist[i]=max(which(arr==c[[i]]))-min(which(arr==c[[i]]))
+}
+print(max(dist))

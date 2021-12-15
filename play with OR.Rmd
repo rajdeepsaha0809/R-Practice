@@ -1,0 +1,38 @@
+binary=function(x){
+  i=0
+  bin=0
+  while(x!=0)
+  {
+    rem=x%%2
+    bin=bin+rem*(10^i)
+    x=x%/%2
+    i=i+1
+  }
+  return(bin)
+}
+decimal=function(x){
+  i=0
+  dec=0
+  while(x!=0)
+  {
+    rem=x%%10
+    dec=dec+rem*(2^i)
+    x=x%/%10
+    i=i+1
+  }
+  return(dec)
+}
+a=array(0)
+n=as.integer(readline(prompt="Enter the number of elements in the array:"))
+for(i in 1:n){
+  a[i]=as.numeric(readline(prompt="Enter a value:"))
+}
+print(a)
+b=sapply(a,binary)
+c=array(0)
+for(i in 1:n-1){
+  c[i]=bitwOr(b[i],b[i+1])
+}
+c
+d=sapply(c,decimal)
+cat("output is:",c(d,a[n]))

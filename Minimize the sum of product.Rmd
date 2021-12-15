@@ -1,0 +1,16 @@
+n=as.integer(readline(prompt="Enter the number of elements in the array:"))
+arr_1=array(0)
+for(i in 1:n){
+  arr_1[i]=as.numeric(readline(prompt="Enter the value:"))
+}
+arr_2=array(0)
+for(i in 1:n){
+  arr_2[i]=as.numeric(readline(prompt="Enter the value:"))
+}
+arr_1=sort(arr_1)
+arr_2=sort(arr_2,decreasing=T)
+c=array(0)
+for(i in 1:3){
+  c[i]=arr_1[i]*arr_2[i]
+}
+print(sum(c))

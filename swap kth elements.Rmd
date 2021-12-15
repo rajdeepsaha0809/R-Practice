@@ -1,0 +1,10 @@
+n=as.integer(readline(prompt="Enter the number of elements in the array:"))
+arr=array(0)
+for(i in 1:n){
+  arr[i]=as.numeric(readline(prompt="Enter the value:"))
+}
+k=as.integer(readline(prompt="Enter the index:"))
+arr[c(k,n-k+1)]=arr[c(n-k+1,k)]
+print(arr)
+
+

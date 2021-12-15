@@ -1,0 +1,9 @@
+a=array(0)
+n=as.integer(readline(prompt="Enter the number of elements of the array:"))
+for(i in 1:n){
+  a[i]=as.numeric(readline(prompt="Enter a value:"))
+}
+print(a)
+max(a)
+sum(a)
+

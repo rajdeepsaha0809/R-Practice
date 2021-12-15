@@ -1,0 +1,12 @@
+n=as.integer(readline(prompt="Enter the number of elements in the array:"))
+arr=array(0)
+for(i in 1:n){
+  arr[i]=as.numeric(readline(prompt="Enter the value:"))
+}
+x=as.integer(readline(prompt="Enter the number:"))
+if(sum(arr==x)!=0){
+    print(which(arr==x))
+}else{
+  print(-1)
+}
+

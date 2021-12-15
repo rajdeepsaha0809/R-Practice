@@ -1,0 +1,8 @@
+a=array(0)
+n=as.integer(readline(prompt="Enter the number of elements in the array:"))
+for(i in 1:n){
+  a[i]=as.numeric(readline(prompt="Enter the value:"))
+}
+print(a)
+i=as.integer(readline(prompt="Enter the index:"))
+paste("Element at index",i,"is",a[i])

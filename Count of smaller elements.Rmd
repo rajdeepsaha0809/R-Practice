@@ -1,0 +1,15 @@
+n=as.integer(readline(prompt="Enter n:"))
+a=array(0)
+for(i in 1:n){
+  a[i]=as.numeric(readline(prompt="Enter the value:"))
+}
+countOfElements=function(x){
+  count=0
+  for(i in 1:n){
+    if(a[i]<=x)
+      count=count+1
+  }
+  return(count)
+}
+x=as.numeric(readline(prompt="Enter the number:"))
+print(countOfElements(x))

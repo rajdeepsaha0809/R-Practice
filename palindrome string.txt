@@ -1,0 +1,9 @@
+a="Tenet"
+s=strsplit(a,split="")[[1]]
+p=array(0)
+n=length(s)
+for(i in 1:n){
+  p[i]=s[n-i+1]
+}
+p=paste(p,collapse="")
+tolower(p)==tolower(a)

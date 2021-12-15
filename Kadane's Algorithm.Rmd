@@ -1,0 +1,15 @@
+n=as.integer(readline(prompt="Enter the number of elements in the array:"))
+x=array(0)
+for(i in 1:n){
+  x[i]=as.numeric(readline(prompt="Enter the value:"))
+}
+a=array(0)
+k=1
+for(i in 1:n){
+  for(j in i:n){
+  a[k]=sum(x[i:j])
+  k=k+1
+  }
+}
+print(max(a))
+

@@ -1,0 +1,7 @@
+n=as.integer(readline(prompt="Enter the number of elements in the array:"))
+x=array(0)
+for(i in 1:n){
+  x[i]=as.numeric(readline(prompt="Enter a value:"))
+}
+print(x)
+print(sum(x))

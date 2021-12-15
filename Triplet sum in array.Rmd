@@ -1,0 +1,14 @@
+arr=c(1,4,45,6,10,8)
+x=63
+library(gtools)
+m=as.matrix(permutations(length(arr),3,arr))
+s=array(0)
+for(i in 1:nrow(m)){
+  s[i]=sum(m[i,])
+}
+s
+if(x%in%s==TRUE){
+  print(1)
+}else{
+  print(0)
+}

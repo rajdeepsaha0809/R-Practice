@@ -1,0 +1,16 @@
+n=as.integer(readline(prompt="Enter the number of elements in the array:"))
+arr=array(0)
+for(i in 1:n){
+  arr[i]=as.numeric(readline(prompt="Enter the value:"))
+}
+k=as.integer(readline(prompt="Enter the index:"))
+b=array(0)
+for(i in 1:n){
+  if(arr[i]%%k==0){
+    b[i]=arr[i]%/%k
+  }else{
+    b[i]=(arr[i]%/%k)+1
+  }
+}
+print(sum(b))
+

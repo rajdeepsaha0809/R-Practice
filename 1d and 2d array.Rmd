@@ -1,0 +1,18 @@
+n=as.integer(readline(prompt="Enter the value of n:"))
+nsq=n*n
+a=array(0)
+for(i in 1:nsq){
+  a[i]=as.numeric(readline(prompt="Enter a value:"))
+}
+brr=array(0)
+for(i in 1:n){
+  brr[i]=as.numeric(readline(prompt="Enter a value:"))
+}
+m=matrix(a,ncol=n)
+m
+sum=0
+for(i in 1:n)
+  sum=sum+m[i,i]
+print(c(sum,max(brr)))
+
+

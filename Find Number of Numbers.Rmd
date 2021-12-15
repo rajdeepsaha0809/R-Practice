@@ -1,0 +1,17 @@
+n=as.integer(readline(prompt="Enter the number of elements in the array:"))
+arr=array(0)
+for(i in 1:n){
+  arr[i]=as.numeric(readline(prompt="Enter the value:"))
+}
+k=as.integer(readline(prompt="Enter the number:"))
+digits=array(0)
+j=1
+for(i in 1:n){
+while(arr[i]!=0){
+  digits[j]=arr[i]%%10
+  arr[i]=arr[i]%/%10
+  j=j+1
+}
+}
+print(sum(digits==k))
+

@@ -1,0 +1,33 @@
+n=as.integer(readline(prompt="Enter the number of elements in the array:"))
+x=array(0)
+for(i in 1:n){
+  x[i]=as.numeric(readline(prompt="Enter the value:"))
+}
+print(max(x))
+
+x=c(2,3,4,2,1)
+count=0
+n=length(x)
+while(n!=1){
+x=x[x!=0]-1
+n=length(x)
+count=count+1
+}
+count
+
+
+x=c(2,5,6,7,4,1,2,3,6,5,8,9)
+n=length(x)
+max=0
+for(i in 1:(n-1)){
+ if(x[i]>x[i+1]){
+ max=x[i]
+ }else{
+ max=x[i+1]
+ }
+}
+max
+
+x=c(1,2,0,5,2)
+x[x!=0]-1
+

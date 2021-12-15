@@ -1,0 +1,10 @@
+n=as.integer(readline(prompt="Enter the value of n:"))
+a=array(0)
+for(i in 1:n){
+  a[i]=as.numeric(readline(prompt="Enter a value:"))
+}
+b=array(0)
+for(i in 1:n){
+  b[i]=as.numeric(readline(prompt="Enter a value:"))
+}
+print(max(a)*min(b))

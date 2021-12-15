@@ -1,0 +1,22 @@
+n=as.integer(readline(prompt="Enter the number of elements in the array:"))
+x=array(0)
+for(i in 1:n){
+  x[i]=as.numeric(readline(prompt="Enter a value:"))
+}
+print(x)
+if(n%%2!=0){
+  temp=0
+  for(i in seq(1,n-2,2)){
+    temp=x[i]
+    x[i]=x[i+1]
+    x[i+1]=temp
+  }
+}else{
+  for(i in seq(1,n-1,2)){
+    temp=x[i]
+    x[i]=x[i+1]
+    x[i+1]=temp
+  }
+}
+x
+
